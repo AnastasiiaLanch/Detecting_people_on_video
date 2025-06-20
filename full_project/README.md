@@ -15,11 +15,6 @@
    pip install -r requirements.txt
    ```
 
-3. Скачайте модель YOLOv8n-seg (если нет автоскачивания):
-   ```bash
-   wget https://github.com/ultralytics/assets/releases/download/v8.1.0/yolov8n-seg.pt -P models/
-   ```
-
 ## Запуск
 
 ```bash
@@ -48,7 +43,13 @@ project/
     └── ANALYSIS.md       # Анализ качества иулучшения
 ```
 
+(При загрузке скрипта main.py отдельно от проекта требуется поместить входной видеофайл crowd.mp4 в папку input_data/, которую надо создать в директории со скриптом)
+
 
 ## Выводы и улучшения
 
 См. docs/ANALYSIS.md
+
+## Примечания
+
+Программа автоматически скачает модель при первом запуске, если она отсутствует
